@@ -1,0 +1,30 @@
+/*6. Generar una matriz de 10x10, asignarles número reales aleatorios a cada elemento entre -5 y 5.
+Calcular e imprimir la suma de cada una de sus filas y de cada una de sus columnas junto con la
+matriz.*/
+import java.util.*;
+public class H02Ej06 {
+
+	public static void main(String[] args) {
+		
+	Scanner teclado =new Scanner(System.in);
+	
+	double matriz [][]= new double [10][10]; //definimos la matriz double, con elementos double de 10x10
+	double  sumfila, sumcolumna;
+	
+	int f, c;	
+	
+	for(f=0; f<=9; f++){ //filas
+		for(c=0; c<=9; c++){ //columnas
+			matriz[f][c]=Math.floor(Math.random()*11-5);//generamos numeros aleatorios entre -5 y 5
+			
+		}
+	}
+	for(f=0; f<=9; f++){ //filas
+		for(c=0; c<=9; c++){ //columnas
+			System.out.printf("%d ",matriz[f][c]);
+			
+		}
+	}
+	}//main
+
+}//class
